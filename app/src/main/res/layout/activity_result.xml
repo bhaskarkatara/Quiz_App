@@ -20,10 +20,20 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/iv_trophy"
+    <TextView
+        android:id="@+id/et_Share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Click for Share With Your Friends->"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:id="@+id/iv_trophy"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:contentDescription="image"
         android:src="@drawable/ic_trophy" />
 
@@ -36,6 +46,8 @@
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold"/>
+
+
 
     <TextView
         android:id="@+id/tv_name"

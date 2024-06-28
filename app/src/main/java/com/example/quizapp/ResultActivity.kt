@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 
@@ -17,6 +18,8 @@ class ResultActivity : AppCompatActivity() {
         val tvName: TextView = findViewById(R.id.tv_name)
         val tvScore:TextView = findViewById(R.id.tv_score)
         val btnFinish:Button = findViewById(R.id.btn_finish)
+        val etShare : TextView = findViewById(R.id.et_Share)
+
 
         val userName = intent.getStringExtra(Constants.USER_NAME)
         tvName.text = userName
@@ -26,6 +29,7 @@ class ResultActivity : AppCompatActivity() {
 
         tvScore.text = "Your Score is $correctAnswers out of $totalQuestions."
 
+        
         btnFinish.setOnClickListener {
             //
             startActivity(Intent(this@ResultActivity, MainActivity::class.java))

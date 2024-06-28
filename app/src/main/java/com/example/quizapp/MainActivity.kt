@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val etName : EditText = findViewById(R.id.et_name)
         val etId : EditText = findViewById(R.id.et_id)
 
-        userRef = FirebaseDatabase.getInstance().reference.child("newUser")
+        userRef = FirebaseDatabase.getInstance().reference.child("User")
 
          btnStart.setOnClickListener {
              if(etName.text.isEmpty()){
